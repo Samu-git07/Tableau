@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Google_data' inline='true' name='federated.0jwwm531mczw1k1f42qd401ddjds' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Google_data' name='textscan.1dbe8qm0yvjokl1a7i1i81thc0zo'>
+            <connection class='textscan' directory='C:/Users/Dell/Desktop/Excel Files' filename='Google_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1dbe8qm0yvjokl1a7i1i81thc0zo' name='Google_data.csv' table='[Google_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='App' ordinal='0' />
+            <column datatype='string' name='Category' ordinal='1' />
+            <column datatype='string' name='Rating' ordinal='2' />
+            <column datatype='integer' name='Reviews' ordinal='3' />
+            <column datatype='string' name='Size' ordinal='4' />
+            <column datatype='string' name='Installs' ordinal='5' />
+            <column datatype='string' name='Type' ordinal='6' />
+            <column datatype='integer' name='Price' ordinal='7' />
+            <column datatype='string' name='Content Rating' ordinal='8' />
+            <column datatype='string' name='Genres' ordinal='9' />
+            <column datatype='string' name='Last Updated' ordinal='10' />
+            <column datatype='string' name='Current Ver' ordinal='11' />
+            <column datatype='string' name='Android Ver' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>App</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[App]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>App</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reviews]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Reviews</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Size]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Size</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Installs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Installs]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Installs</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Content Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Content Rating]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Content Rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genres</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genres]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Genres</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Updated</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Updated]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Last Updated</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Ver</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Current Ver]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Current Ver</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Android Ver</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Android Ver]</local-name>
+            <parent-name>[Google_data.csv]</parent-name>
+            <remote-alias>Android Ver</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Free' datatype='integer' name='[Calculation_510032676641595392]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF[Type]=&apos;Free&apos; THEN [Reviews] END' />
+      </column>
+      <column caption='Paid' datatype='integer' name='[Calculation_510032676642402305]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF[Type]=&apos;Paid&apos; THEN [Reviews] END' />
+      </column>
+      <column caption='Google_data.csv' datatype='table' name='[__tableau_internal_object_id__].[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Dell/AppData/Local/Temp/TableauTemp/#TableauTemp_1omnm171t4momi11qg0aj00j2qv2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/26/2024 08:34:20 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>App</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[App]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>App</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5998</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reviews</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2935</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Size</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>306</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Installs</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Installs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Installs</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Content Rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Content Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Content Rating</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genres</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>97</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Updated</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Last Updated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Last Updated</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1123</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Current Ver</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Current Ver]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Current Ver</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1638</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Android Ver</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Android Ver]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Android Ver</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Google_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Google_data.csv_75D9C1E1F5404A56812D213C20109E05]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Google_data.csv' id='Google_data.csv_75D9C1E1F5404A56812D213C20109E05'>
+            <properties context=''>
+              <relation connection='textscan.1dbe8qm0yvjokl1a7i1i81thc0zo' name='Google_data.csv' table='[Google_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='App' ordinal='0' />
+                  <column datatype='string' name='Category' ordinal='1' />
+                  <column datatype='string' name='Rating' ordinal='2' />
+                  <column datatype='integer' name='Reviews' ordinal='3' />
+                  <column datatype='string' name='Size' ordinal='4' />
+                  <column datatype='string' name='Installs' ordinal='5' />
+                  <column datatype='string' name='Type' ordinal='6' />
+                  <column datatype='integer' name='Price' ordinal='7' />
+                  <column datatype='string' name='Content Rating' ordinal='8' />
+                  <column datatype='string' name='Genres' ordinal='9' />
+                  <column datatype='string' name='Last Updated' ordinal='10' />
+                  <column datatype='string' name='Current Ver' ordinal='11' />
+                  <column datatype='string' name='Android Ver' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D5CC0419-9769-4929-AC31-F3A75E85D031}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CC773272-D399-43E3-A3AE-00B466C8669C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
